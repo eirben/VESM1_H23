@@ -7,10 +7,11 @@ blink1_running = True
 blink2_running = True
 buzzer_running = True
 
-led1 = Pin(14, Pin.OUT)
-led2 = Pin(13, Pin.OUT)
-buzzer = Pin(12,Pin.OUT)
-buzzer.value(0) 
+buzzer = Pin(12,Pin.OUT) # buzzer í pinna 12 og GND
+led1 = Pin(13, Pin.OUT) #led1 í pinna 13 og GND
+led2 = Pin(14, Pin.OUT) #led2 í pinna 14 og GND
+buzzer.value(0)
+
 def blink1(delay):
      while blink1_running:
          led1.value(not led1.value())
